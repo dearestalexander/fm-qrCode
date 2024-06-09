@@ -15,8 +15,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
@@ -38,20 +36,28 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+1) Decide on the HTML structure based on desktop-preview.jpg. I think:
+
+- `<body>`
+  - Add one `div` inside body for the large light blue box
+    - Add one `div` inside the large light blue box for the white box.
+      - Add `image-gr-code.png` inside the white box
+      - Add `h1` for "Improve your front-end..." text inside the white box
+      - Add `p` for "Scan the qr code... " text inside the white box
+- Note: unsure if we should leave the .attribution div, so just leaving it for now. 
+
+2) Add CSS
+
+
+
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- CSS variables
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
+
+- I'm coming to frontend mentor after completing freeCodeCamp responsive web design so my solution is fairly straightforward
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
