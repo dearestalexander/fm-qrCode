@@ -10,6 +10,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Questions and thoughts](#questions-and-thoughts)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -19,19 +20,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/dearestalexander/fm-qrCode
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -46,64 +39,85 @@ Then crop/optimize/edit your image however you like, add it to your project, and
       - Add `p` for "Scan the qr code... " text inside the white box
 - Note: unsure if we should leave the .attribution div, so just leaving it for now. 
 
-2) Add CSS
+2) Add CSS / build the format
 
+Preparation:
 
+- To start I applied some CSS to normalise the body::
+  - Margin & padding to 0, width and height to 100vw/vh, overflow to hidden
+- Next I set up every style input as a variable
+  - All colors plus font family, size and weights. Maybe this is overkill for this excercise, but I wanted to devlop a habbit of using variables.
+- I added the stylesheet link to the HTML for the google font 'Outfit'
 
+Styling:
+
+- White box 
+  - Positioning:
+    - To centre vertically & horiztonally I used absolute with top/left 50% and transform -50%
+  - Sizing:
+    - For desktop: used %vw, estimated to be 20% of view width
+    - For mobile: specified 325px and put both 20vw and 325px within Max()
+  - Others:
+    - Set border radius to 15px
+    - Set display as flex in order to use align-items: center for the children}
+
+- QR code
+  - Sizing: Set witdth to 90% of it's container, leaving 5% white space each side
+  - Added margin-top of 5% to match sides
+
+- h1
+  - Sizing: set width to 80% (a bit less than QR code)
+  - Set font family/weight, color as per specifications
+  - Text-align to center
+  - Took a guess on font-size as 20px
+    - I put this in a max(20px, 1rem) for accessibility consideraitons.
+  - Set margin top to try and mirror specification spacing.
+
+- p
+  - Similar settings to h1, but with specific font size of 15px
+  - Set margin bottom to 10% to try and mirror specification spacing
+
+ 
 ### Built with
 
-- CSS variables
+- Plain CSS (it's on my to do list to learn SCSS)
 - Flexbox
+- Heavy use of variables? Maybe overkill for this exercise.
 
 ### What I learned
 
-- I'm coming to frontend mentor after completing freeCodeCamp responsive web design so my solution is fairly straightforward
+- I learnt how to control git via terminal and use github pages
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+For HTML and CSS the points I had learned during freeCodeCamp's responsive web design seemed to be enough to create a basic version of this. I did have to brush up on a few points:
 
-To see how you can add code snippets, see below:
+- The structure of the links for google fonts
+- Using max() with font sizes
+- Everytime I use flexbox I need to remind myself on justify-content vs. align-items etc. 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+### Questions and thoughts
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- Is `<div>` the right element for the white box or maybe `<section>` is more appropriate?
+- I set the white box size as a % of viewport, then set the QR to scale with it. 
+  - Alternatively is there a benefit to setting fixed sizes for the QR code (mobile and desktop) for  and having the other elements scale with it?
+- The specification includes paragraph at 15px, is this okay from an accessibility standpoint?
+  - Should we not design with minimum 16px text? Also I wondered whenever specifying text size in px, should we do something like max(15px, 1rem) in case the individual has increased their browswer font size due to eyesight issues?
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I think as this is only an introductory exercise there isn't anything specific to think about.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+I took detailed notes while working through freeCodeCamp and created my own reference which I used when working on this haha :)
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+[my quick reference](https://raw.githack.com/dearestalexander/RWBQuickRef/main/rwb.html)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Alexander Roan](https://www.alexroan.com)
+- Frontend Mentor - [@dearestalexander](https://www.frontendmentor.io/profile/dearestalexander)
+- Twitter - [@xander_roan](https://x.com/xander_roan)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I just want to thank everyone at frontend mentor for putting this together. The HTML and CSS wasn't too challenging for this introductory exercise, but it was the first time I set up Git and used it from terminal. The instructions and links were very helpful. This first challenge also helped me to get into the mindset of creating little projects and referencing my notes and refreshing on things. I also enjoyed the process of trying to build something from a design image, it's a bit like a puzzle!
