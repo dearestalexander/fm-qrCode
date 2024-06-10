@@ -24,22 +24,21 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: https://github.com/dearestalexander/fm-qrCode
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repository](https://github.com/dearestalexander/fm-qrCode)
+- Live Site URL: [Github Pages Live View](https://dearestalexander.github.io/fm-qrCode/)
 
 ## My process
 
-1) Decide on the HTML structure based on desktop-preview.jpg. I think:
+### HTML / structure
 
-- `<body>`
-  - Add one `div` inside body for the large light blue box
-    - Add one `div` inside the large light blue box for the white box.
-      - Add `image-gr-code.png` inside the white box
-      - Add `h1` for "Improve your front-end..." text inside the white box
-      - Add `p` for "Scan the qr code... " text inside the white box
-- Note: unsure if we should leave the .attribution div, so just leaving it for now. 
+- Starting from `<body>`:
+  - Add one `div` for the white box.
+    - Add `img` for the QR code 
+    - Add `h1` for "Improve your front-end..." text 
+    - Add `p` for "Scan the qr code... " text
+- Note I left the .attribution div in the design.
 
-2) Add CSS / build the format
+### CSS / styling:
 
 Preparation:
 
@@ -59,7 +58,7 @@ Styling:
     - For mobile: specified 325px and put both 20vw and 325px within Max()
   - Others:
     - Set border radius to 15px
-    - Set display as flex in order to use align-items: center for the children}
+    - Set display as flex in order to use align-items: center for the children.
 
 - QR code
   - Sizing: Set witdth to 90% of it's container, leaving 5% white space each side
@@ -108,7 +107,7 @@ I think as this is only an introductory exercise there isn't anything specific t
 
 ### Useful resources
 
-I took detailed notes while working through freeCodeCamp and created my own reference which I used when working on this haha :)
+I took detailed notes while working through freeCodeCamp and created my own reference which I used when working on this haha
 
 [my quick reference](https://raw.githack.com/dearestalexander/RWBQuickRef/main/rwb.html)
 
