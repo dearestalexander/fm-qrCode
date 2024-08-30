@@ -4,17 +4,21 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Questions and thoughts](#questions-and-thoughts)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Frontend Mentor - QR code component solution](#frontend-mentor---qr-code-component-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [HTML / structure](#html--structure)
+    - [CSS / styling](#css--styling)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Questions and thoughts](#questions-and-thoughts)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -33,12 +37,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - Starting from `<body>`:
   - Add one `div` for the white box.
-    - Add `img` for the QR code 
-    - Add `h1` for "Improve your front-end..." text 
+    - Add `img` for the QR code
+    - Add `h1` for "Improve your front-end..." text
     - Add `p` for "Scan the qr code... " text
-- Note I left the .attribution div in the design.
 
-### CSS / styling:
+### CSS / styling
 
 Preparation:
 
@@ -50,7 +53,7 @@ Preparation:
 
 Styling:
 
-- White box 
+- White box
   - Positioning:
     - To centre vertically & horiztonally I used absolute with top/left 50% and transform -50%
   - Sizing:
@@ -76,7 +79,6 @@ Styling:
   - Similar settings to h1, but with specific font size of 15px
   - Set margin bottom to 10% to try and mirror specification spacing
 
- 
 ### Built with
 
 - Plain CSS (it's on my to do list to learn SCSS)
